@@ -13,7 +13,7 @@ NewsChat is a comprehensive news analysis platform. It features a Streamlit-base
 
 - **Language**: Python 3.12+
 - **Web Framework**: [Streamlit](https://streamlit.io/)
-- **LLM Orchestration**: [Google ADK](https://github.com/google/adk), [LiteLLM](https://github.com/BerriAI/litellm)
+- **LLM Orchestration**: [Google ADK](https://google.github.io/adk-docs/), [LiteLLM](https://github.com/BerriAI/litellm)
 - **Vector Database**: [Weaviate](https://weaviate.io/)
 - **Data Processing**: Pandas, Scikit-learn, Spacy
 - **Integrations**: Google Sheets (via pygsheets), OpenAI, LangSmith
@@ -23,14 +23,19 @@ NewsChat is a comprehensive news analysis platform. It features a Streamlit-base
 ```text
 .
 ├── app/                    # Streamlit application source code
+│   ├── __init__.py         
 │   ├── main.py             # Entry point for the Streamlit app
 │   ├── news_chat.py        # Core logic for the NewsChat assistant
 │   ├── services.py         # Weaviate and Google Sheets service connectors
 │   ├── config.py           # Environment and configuration management
 │   ├── utils.py            # UI utilities
 │   └── pages/              # Multi-page application structure
+│       ├── __init__.py 
 │       ├── 1_Highlights.py # News highlights page
 │       └── 2_Chatbot.py    # RAG-powered chatbot page
+│   └── .streamlit/         
+│       ├── __init__.py 
+│       └── config.toml     # Config options for streamlit
 ├── notebooks/              # Data pipeline and experimentation notebooks
 │   ├── 00_utils.ipynb
 │   ├── 01_data_extraction.ipynb
