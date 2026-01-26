@@ -90,7 +90,7 @@ python -m streamlit run app/main.py
 
 ## Notebooks
 
-The `notebooks/` directory contains the data processing pipeline:
+The `notebooks/` directory contains the data extraction, classification, clustering and RAG pipelines
 1. `01_data_extraction.ipynb`: Extract news from various sources.
 2. `02_classify.ipynb`: Categorize articles (Sports, Lifestyle, Music, Finance).
 3. `03_clustering.ipynb`: Group similar articles into story clusters.
