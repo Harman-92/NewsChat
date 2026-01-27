@@ -5,15 +5,15 @@ from pathlib import Path
 import weaviate
 from weaviate.classes.init import Auth
 
+## For local
+#FILE_PATH = Path(__file__).parent.parent.resolve()/"google_key.json"
 
-FILE_PATH = Path(__file__).parent.parent.resolve()/"google_key.json"
 
 def sheets_to_df(sheet_name: str, sheet_url: str) -> pd.DataFrame:
     """
     Get a Google sheet as a pandas dataframe
     """
-
-    gc = pygsheets.authorize(service_account_file=FILE_PATH)
+    gc = pygsheets.authorize(service_account_file=settings.GOOGLE_KEY_PATH)
     sh = gc.open_by_url(sheet_url)
     wks = sh.worksheet_by_title(sheet_name)
     return wks.get_as_df()
