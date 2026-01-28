@@ -59,8 +59,10 @@ cd NewsChat
 Create a `.env` file in the root directory and provide the following variables:
 
 ```env
-WEAVIATE_ENDPOINT=your_weaviate_url
+WEAVIATE_URL=your_weaviate_url
 WEAVIATE_API_KEY=your_weaviate_api_key
+# Google key path
+GOOGLE_KEY_PATH=your_google_key_path
 SHEET_URL=your_google_sheet_url
 # LiteLLM/OpenAI setup (depending on model used)
 OPENAI_API_KEY=your_openai_api_key
