@@ -20,7 +20,7 @@ with col1:
 
 with col2:
     today = date.today()
-    default_start = today - timedelta(days=7)
+    default_start = today - timedelta(days=14)
     start_date, end_date = st.date_input(
         "Date range",
         value=(default_start, today),
