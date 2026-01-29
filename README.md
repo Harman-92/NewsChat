@@ -1,6 +1,6 @@
 # NewsChat
 
-NewsChat is a comprehensive news analysis platform. It features a Streamlit-based web application that allows users to explore news highlights and interact with a chatbot powered by Retrieval-Augmented Generation (RAG).
+NewsChat implements an end-to-end news analysis pipeline that enables users to explore news highlights and ask questions via an AI assistant powered by Retrieval-Augmented Generation (RAG).
 
 ## Features
 
