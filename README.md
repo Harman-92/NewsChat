@@ -97,7 +97,3 @@ The `notebooks/` directory contains the data extraction, classification, cluster
 2. `02_classify.ipynb`: Categorize articles (Sports, Lifestyle, Music, Finance).
 3. `03_clustering.ipynb`: Group similar articles into story clusters.
 4. `04_RAG.ipynb`: Prototype and test the RAG implementation.
-
-## Tests
-
-- TODO: Add unit and integration tests for core functionalities.
